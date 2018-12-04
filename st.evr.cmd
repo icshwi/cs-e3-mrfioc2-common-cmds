@@ -1,6 +1,6 @@
 require mrfioc2,2.2.0-rc4
 require recsync,1.3.0
-require evr-timestamp-buffer,2.5.0
+#require evr-timestamp-buffer,2.5.0
 # require evrseq,master
 #require evrseq,0.1.0
 #require pva2pva,1.0.0
@@ -13,9 +13,9 @@ epicsEnvSet("TOP", "$(E3_CMD_TOP)")
 #epicsEnvSet("EVRSEQ_DB_TOP", "$(E3_MODULES)/e3-evrseq/ics-evr-seq-dev/evrseqcalcApp/Db")
 
 mrmEvrSetupPCI("$(EVR)", $(PCI_SLOT))
-dbLoadRecords("evr-pcie-300dc-ess.db","EVR=$(EVR),SYS=$(SYS),D=$(DEVICE),FEVT=88.0525,PINITSEQ=0")
+#dbLoadRecords("evr-pcie-300dc-ess.db","EVR=$(EVR),SYS=$(SYS),D=$(DEVICE),FEVT=88.0525,PINITSEQ=0")
 
-iocshLoad("$(evr-timestamp-buffer_DIR)/evr-timestamp-buffer.iocsh", "CHIC_SYS=$(CHIC_SYS), CHOP_DRV=$(CHOP_DRV), SYS=$(SYS), DEVICE=$(CHIC_DEV):")
+#iocshLoad("$(evr-timestamp-buffer_DIR)/evr-timestamp-buffer.iocsh", "CHIC_SYS=$(CHIC_SYS), CHOP_DRV=$(CHOP_DRV), SYS=$(SYS), DEVICE=$(CHIC_DEV):")
 
 #dbLoadTemplate("/opt/epics/modules/esschic/nicklasholmberg2/db/esschicTimestampBuffer.substitutions", "CHIC_SYS=$(CHIC_SYS), CHOP_DRV=$(CHOP_DRV), SYS=$(SYS), DEVICE=$(CHIC_DEV):")
 
