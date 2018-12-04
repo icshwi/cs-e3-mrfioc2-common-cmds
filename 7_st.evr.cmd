@@ -27,9 +27,4 @@ iocshLoad("$(EVRSEQ_CMD_TOP)/evrseq.cmd", "DEV1=$(CHOP_DRV)01:, DEV2=$(CHOP_DRV)
 # The amount of time which the EVR will wait for the 1PPS event before going into error state.
 var(evrMrmTimeNSOverflowThreshold, 1000000)
 
-iocInit()
-
-# Global default values
-# Set the frequency that the EVR expects from the EVG for the event clock 
-dbpf $(SYS)-$(DEVICE):Time-Clock-SP 88.0525
 
