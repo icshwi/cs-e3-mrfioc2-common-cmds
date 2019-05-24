@@ -1,4 +1,4 @@
-require mrfioc2,2.2.0-rc4
+require mrfioc2,2.2.0-rc5
 require recsync,1.3.0
 #require evr-timestamp-buffer,2.5.0
 # require evrseq,master
